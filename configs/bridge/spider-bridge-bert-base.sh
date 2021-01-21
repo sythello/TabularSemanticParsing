@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-data_dir="data/spider/my/Bridge-asr"
+data_dir="data/spider"
 db_dir="data/spider/database"
 dataset_name="spider"
 model="bridge"
@@ -35,10 +35,10 @@ max_out_seq_len=60
 num_steps=100000
 curriculum_interval=0
 num_peek_steps=1000
-num_accumulation_steps=8
+num_accumulation_steps=2
 save_best_model_only="True"
-train_batch_size=4
-dev_batch_size=4
+train_batch_size=16
+dev_batch_size=24
 encoder_input_dim=1024
 encoder_hidden_dim=400
 decoder_input_dim=400
@@ -54,7 +54,7 @@ random_field_order="False"
 data_augmentation_factor=1
 augment_with_wikisql="False"
 num_values_per_field=0
-pretrained_transformer="bert-large-uncased"
+pretrained_transformer="bert-base-uncased"
 fix_pretrained_transformer_parameters="False"
 bert_finetune_rate=0.00006
 learning_rate=0.0005

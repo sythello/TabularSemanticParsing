@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-data_dir="data/spider"
+data_dir="data/spider/my/Bridge-asr"
 db_dir="data/spider/database"
 dataset_name="spider"
 model="bridge"
@@ -54,7 +54,7 @@ random_field_order="False"
 data_augmentation_factor=1
 augment_with_wikisql="False"
 num_values_per_field=0
-pretrained_transformer="bert-large-uncased"
+pretrained_transformer="bert-base-uncased"
 fix_pretrained_transformer_parameters="False"
 bert_finetune_rate=0.00006
 learning_rate=0.0005
