@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-data_dir="data/spider"
-db_dir="data/spider/database"
+data_dir="/vault/spider"
+db_dir="/vault/spider/database"
 dataset_name="spider"
 model="bridge"
 question_split="True"
