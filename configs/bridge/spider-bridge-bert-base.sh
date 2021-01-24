@@ -2,6 +2,7 @@
 
 data_dir="data/spider"
 db_dir="data/spider/database"
+model_root_dir="/vault/Bridge/model"
 dataset_name="spider"
 model="bridge"
 question_split="True"
@@ -35,11 +36,11 @@ max_out_seq_len=60
 num_steps=100000
 curriculum_interval=0
 num_peek_steps=1000
-num_accumulation_steps=2
+num_accumulation_steps=4
 save_best_model_only="True"
-train_batch_size=16
-dev_batch_size=24
-encoder_input_dim=1024
+train_batch_size=8
+dev_batch_size=8
+encoder_input_dim=768
 encoder_hidden_dim=400
 decoder_input_dim=400
 num_rnn_layers=1
@@ -74,7 +75,7 @@ res_layer_dropout_rate=0
 ff_input_dropout_rate=0.4
 ff_hidden_dropout_rate=0.0
 
-grad_norm=0.3
+grad_norm=0.1
 decoding_algorithm="beam-search"
 beam_size=16
 bs_alpha=1.05

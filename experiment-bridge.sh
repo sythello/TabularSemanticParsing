@@ -124,6 +124,7 @@ cmd="python3 -m src.experiments \
     $exp \
     --data_dir $data_dir \
     --db_dir $db_dir \
+    --model_root_dir $model_root_dir \
     --dataset_name $dataset_name \
     $question_split_flag \
     $query_split_flag \
