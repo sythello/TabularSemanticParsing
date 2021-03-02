@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-data_dir="data/spider/my/Bridge-asr"
+data_dir="data/spider/my/Bridge-asr-infer"
 db_dir="data/spider/database"
 model_root_dir="/vault/Bridge/model"
 dataset_name="spider"
